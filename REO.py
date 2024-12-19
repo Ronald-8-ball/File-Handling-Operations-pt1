@@ -17,14 +17,6 @@ print(file.readline())
 print(file.readline())
 file.close()
 
-with open('Me.txt','r') as file:
-    file.readlines()
-    for x in file:
-        data = x.split()
-        print(data)
-file.close()
-
-
-
-
-
+file = open('Me.txt','r')
+for x in file:
+    print(x.strip())
